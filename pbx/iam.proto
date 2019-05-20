@@ -65,7 +65,7 @@ message AuthLoginRequest {
 
 message AuthLoginResponse {
   string token = 1;
-  string user_id = 2;
+  string user_id = 2 [json_name="userId"];
   repeated AuthRole roles = 3;
   bool force_pwd_change = 4;
 }
